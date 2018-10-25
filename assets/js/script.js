@@ -1,10 +1,9 @@
 
 
 function guessLetter(){
-    let dictionnary=["BONJOUR", "BECODE", "CODER", "CHARLEROI", 
+    let dictionnary=["SUPERCALIFRAGILISTICEXPIALIDOCIOUS","BONJOUR", "BECODE", "CODER", "CHARLEROI", 
     "ANTICONSTITUTIONNELLEMENT", "GAMING", "ORDINATEUR", "DEVELOPPER","GENK","LIEGE", "BRUXELLES","TABLETTE", "BOOTSTRAP"];
     let mysteryWord=mysteryFromDictionnary(dictionnary);
-    console.log(mysteryWord);
     let guessWord=initGuessWord(mysteryWord);
     let userInput="";
     let findLetter=false;
@@ -68,6 +67,5 @@ function initGuessWord(word){
     for(let i=0;i<word.length;i++){
         guessWord.push(". ");
     }
-    console.log(guessWord);
     return guessWord;
 }
